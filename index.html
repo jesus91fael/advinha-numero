@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Qual é o número?</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title-header">qual é o número?</h1>
+            <div class="underline-header"></div>
+        </header>
+        <main class="main">
+            <div class="result-container">
+                <p class="result-container-paragraph" id="result">
+                    resultado</p>
+            </div>
+
+            <div class="primary-container">
+                <div>
+                    <div id="display-1" class="main-content-display
+                    display-num-0">
+                        <div class="shape-line-a"></div>
+                        <div class="shape-line-b"></div>
+                        <div class="shape-line-c"></div>
+                        <div class="shape-line-d"></div>
+                        <div class="shape-line-e"></div>
+                        <div class="shape-line-f"></div>
+                        <div class="shape-line-g"><span class="shape-line-mirror">
+                            </span></div>
+                    </div>
+                    <div id="display-2" class="main-content-display
+                     display-num-1">
+                        <div class="shape-line-a"></div>
+                        <div class="shape-line-b"></div>
+                        <div class="shape-line-c"></div>
+                        <div class="shape-line-d"></div>
+                        <div class="shape-line-e"></div>
+                        <div class="shape-line-f"></div>
+                        <div class="shape-line-g"><span class="shape-line-mirror">
+                            </span></div>
+                    </div>
+                    <div id="display-3" class="main-content-display
+                     display-num-2">
+                        <div class="shape-line-a"></div>
+                        <div class="shape-line-b"></div>
+                        <div class="shape-line-c"></div>
+                        <div class="shape-line-d"></div>
+                        <div class="shape-line-e"></div>
+                        <div class="shape-line-f"></div>
+                        <div class="shape-line-g"><span class="shape-line-mirror">
+                            </span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-new-game">
+                <button id="new-game" class="container-new-game-button">
+                   <img src="images/refresh.svg" alt="Nova Partida"/> NOVA PARTIDA
+                </button>
+            </div>
+
+            <div class="content-input-box">
+                <div class="content-input-numeric">
+                    <input class="content-input-numeric-input" type="number" min="0" max="300" name="shot"
+                        id="shot" placeholder="Digite o palpite" />
+                    <input class="content-input-numeric-button" type="submit" id="send" value="enviar"
+                        disabled></input>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script type="text/javascript" src="request.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

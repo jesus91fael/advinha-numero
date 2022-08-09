@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    position: absolute;
+    width: 365px;
+    height: 588px;
+    margin: auto;
+    background: linear-gradient(180deg, #EEEEEE 0%, #FFFFFF 100%);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 62px;
+    gap: 5px;
+}
+
+.title-header {
+    color: #EF6C00;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29.26px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.underline-header {
+    width: 205px;
+    height: 1px;
+    background: #CFCFCF;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#result {
+    visibility: hidden;
+}
+
+.result-container{
+    margin-top: 90px;
+}
+
+.result-container-paragraph {
+    color: #EF6C00;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -1px;
+}
+
+.primary-container {
+    margin-top: 16px;
+}
+
+.main-content-display {
+    position: relative;
+    float: left;
+    width: 80px;
+    height: 125px;
+}
+
+#display-2 {
+    display: none;
+}
+
+#display-3 {
+    display: none;
+}
+
+.main-content-display .shape-line-a {
+    width: 68.48px;
+    left: 0px;
+    border-top: 15px solid #262A34;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-radius: 8px;
+    top: 0;
+}
+
+.main-content-display .shape-line-d {
+    position: absolute;
+    margin-top: -15px;
+    width: 68.48px;
+    left: 0px;
+    border-bottom: 15px solid #262A34;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-radius: 8px;
+    top: 127px;
+}
+
+.main-content-display .shape-line-g {
+    position: absolute;
+    margin-top: -14px;
+    width: 63px;
+    left: 2.5px;
+    border-bottom: 11px solid #262A34;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    top: 66.25px;
+}
+
+.main-content-display .shape-line-g .shape-line-mirror {
+    position: absolute;
+    top: 11px;
+    left: -12px;
+    right: -12px;
+    border-top: 11px solid #262A34;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+}
+
+.main-content-display .shape-line-b {
+    position: absolute;
+    height: 63.39px;
+    width: 0;
+    border-right: 15px solid #262A34;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-radius: 8px;
+    top: 1.5px;
+    left: 54px;
+}
+
+.main-content-display .shape-line-c {
+    position: absolute;
+    height: 63.39px;
+    width: 0;
+    border-right: 15px solid #262A34;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-radius: 8px;
+    top: 62px;
+    left: 54px;
+}
+
+.main-content-display .shape-line-e {
+    position: absolute;
+    height: 63.39px;
+    border-left: 15px solid #262A34;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-radius: 8px;
+    top: 62px;
+    left: -1px;
+}
+
+.main-content-display .shape-line-f {
+    position: absolute;
+    height: 63.39px;
+    border-left: 15px solid #262A34;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-radius: 8px;
+    top: 1.5px;
+    left: -1px;
+}
+
+.display-num-0 .shape-line-g {
+    opacity: 0.1;
+}
+
+.display-num-1 .shape-line-a,
+.display-num-1 .shape-line-d,
+.display-num-1 .shape-line-e,
+.display-num-1 .shape-line-f,
+.display-num-1 .shape-line-g {
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+}
+
+.display-num-2 .shape-line-c,
+.display-num-2 .shape-line-f {
+    opacity: 0.1;
+}
+
+.display-num-3 .shape-line-e,
+.display-num-3 .shape-line-f {
+    opacity: 0.1;
+}
+
+.display-num-4 .shape-line-a,
+.display-num-4 .shape-line-d,
+.display-num-4 .shape-line-e {
+    opacity: 0.1;
+}
+
+.display-num-5 .shape-line-b,
+.display-num-5 .shape-line-e {
+    opacity: 0.1;
+}
+
+.display-num-6 .shape-line-b {
+    opacity: 0.1;
+}
+
+.display-num-7 .shape-line-d,
+.display-num-7 .shape-line-e,
+.display-num-7 .shape-line-f,
+.display-num-7 .shape-line-g {
+    opacity: 0.1;
+}
+
+.display-num-9 .shape-line-e {
+    opacity: 0.1;
+}
+
+.container-new-game {
+    margin-top: 56px;
+    display: block;
+}
+
+#new-game {
+    visibility: hidden;
+}
+
+.container-new-game-button {
+    padding: 0;
+    margin: 0;
+    width: 130px;
+    height: 42px;
+    border: none;
+    border-radius: 4px;
+    transition-duration: 60s;
+    background-image: linear-gradient( to bottom, #5C6068,#989899);
+    color: #FFFFFF;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.content-input-box {
+    margin-top: 73px;
+    margin-bottom: 31px;
+}
+
+.content-input-numeric {
+    display: flex;
+    width: 298px;
+    height: 42px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-input-numeric-input {
+    width: 214px;
+    height: 42px;
+    background-color: #FFFFFF;
+    border: 1px solid #CFCFCF;
+    border-radius: 4px;
+    padding-left: 8px;
+}
+
+.content-input-numeric-input:focus {
+    outline: none;
+    border: 1px solid #EF6C00;
+}
+
+.content-input-numeric-input::placeholder {
+    color: #9E9E9E;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    width: 80px;
+    height: 14px;
+}
+
+.content-input-numeric-button {
+    width: 71px;
+    height: 42px;
+    background-color: #EF6C00;
+    border: 1px solid #CFCFCF;
+    border-radius: 4px;
+
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.content-input-numeric-button:hover {
+    border: 1px solid #EF6C00;
+}
