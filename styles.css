@@ -1,17 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap');
 
+/* 
+Reset CSS para remover os estilos padrão que 
+foram injetados pelo navegador.
+*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* 
+Cor de fundo da aplicação e posição do conteúdo.
+*/
 body {
     background: #FFFFFF;
     display: flex;
     justify-content: center;
 }
 
+/* 
+Posicionei todo o conteúdo no centro usando a posição relativa 
+para ter a liberdade de posicionar o conteúdo na página e com margem no auto 
+tornando o conteúdo centralizado.
+*/
 .container {
     position: absolute;
     width: 365px;
@@ -20,6 +32,12 @@ body {
     background: linear-gradient(180deg, #EEEEEE 0%, #FFFFFF 100%);
 }
 
+/* 
+o uso do display:flex foi para organizar os itens filhos 
+em ordem vertical com flex-direction no modo de coluna. Para centralizar os 
+itens foi align-items e para distanciar os itens do topo do site usei margin-top
+e para separar os itens uns dos outros pelo gap.
+*/
 .header {
     display: flex;
     flex-direction: column;
@@ -38,6 +56,9 @@ body {
     text-transform: uppercase;
 }
 
+/* 
+Criação da linha de separação para a classe de cabeçalho e a classe de conteúdo.
+*/
 .underline-header {
     width: 205px;
     height: 1px;
@@ -45,16 +66,25 @@ body {
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
+/* 
+Para itens da classe "conteudo" serem posicionados verticalmente e centralizados.
+*/
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* 
+Para o resultado, fica invisível no início da aplicação.
+*/
 #result {
     visibility: hidden;
 }
 
+/* 
+Distância do final da classe de cabeçalho até o início da classe de conteúdo. 
+*/
 .result-container{
     margin-top: 90px;
 }
@@ -78,6 +108,13 @@ body {
     height: 125px;
 }
 
+/* 
+identificador do display 2 e display 3 são definidos como "none" 
+para ocultar os displays, mas quando o usuário insere um valor acima de 
+um dígitos, no arquivo script.js, há uma estrutura de seleção que irá 
+transformar este display "none" em "block" dependendo de quantos dígitos 
+o usuário insere na entrada com um máximo de 3 dígitos.
+*/
 #display-2 {
     display: none;
 }
@@ -86,6 +123,17 @@ body {
     display: none;
 }
 
+/*
+A criação do segmento  foi utilizado a criação de uma borda com as 
+especificações de largura e comprimento no figma. pesquisando o 
+funcionamento o display de 7 segmentos. no caso esse display ele 
+funciona com que cada barra de LED do segmento corresponde a uma 
+letra e com isso. eu fui desenvolvendo barra por barra de LED da 
+Barra A até a Barra G, sendo que na Barra G para o design ficar 
+igual ao que foi passado na prova. tive que cria um reflexo da 
+Barra G. sendo que barra A, G e D são horizontais e barra B, C, 
+E  e F verticais.
+*/
 .main-content-display .shape-line-a {
     width: 68.48px;
     left: 0px;
@@ -224,6 +272,11 @@ body {
     opacity: 0.1;
 }
 
+/* 
+Botão nova partida 
+
+Distância do final da classe de conteudo-principal até o início da classe de conteudo-nova-partida. 
+*/
 .container-new-game {
     margin-top: 56px;
     display: block;
@@ -240,6 +293,7 @@ body {
     height: 42px;
     border: none;
     border-radius: 4px;
+    font-weight: 700;
     transition-duration: 60s;
     background-image: linear-gradient( to bottom, #5C6068,#989899);
     color: #FFFFFF;
@@ -251,6 +305,14 @@ body {
     cursor: pointer;
 }
 
+.container-new-game-button:hover {
+  border: 1px solid #000;
+}
+
+/* 
+|Container Input do usuario 
+
+*/
 .content-input-box {
     margin-top: 73px;
     margin-bottom: 31px;

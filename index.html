@@ -9,7 +9,9 @@
 </head>
 
 <body>
+    <!-- aqui conterá todo o corpo do meu aplicativo -->
     <div class="container">
+        <!-- nesse ponto fica o título e a linha de divisão entre o cabeçalho e o conteúdo -->
         <header class="header">
             <h1 class="title-header">qual é o número?</h1>
             <div class="underline-header"></div>
@@ -20,6 +22,10 @@
                     resultado</p>
             </div>
 
+            <!-- nesse ponto o usuario terá a resposta visual, se foi maior ou menor
+                ou se acertou ou se houve erro na requisição. Também terá a
+                classe os segmentos do display, cada display é identificado de 1 a 3 com sete segmentos em 
+                cada. -->
             <div class="primary-container">
                 <div>
                     <div id="display-1" class="main-content-display
@@ -57,13 +63,13 @@
                     </div>
                 </div>
             </div>
-
+             <!-- container onde fica botão de nova partida -->
             <div class="container-new-game">
                 <button id="new-game" class="container-new-game-button">
                    <img src="images/refresh.svg" alt="Nova Partida"/> NOVA PARTIDA
                 </button>
             </div>
-
+            <!-- container onde fica o campo para inserir o palpite que irá realizar no jogo -->
             <div class="content-input-box">
                 <div class="content-input-numeric">
                     <input class="content-input-numeric-input" type="number" min="0" max="300" name="shot"
